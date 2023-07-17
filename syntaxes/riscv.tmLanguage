@@ -87,6 +87,24 @@
       </dict>
 
       <dict>
+        <key>comment</key>
+        <string>Custom SNU CA 22-2 extension</string>
+        <key>match</key>
+        <string>\b(push|pop)\b</string>
+        <key>name</key>
+        <string>support.function.riscv.xsnupushpop</string>
+      </dict>
+
+      <dict>
+        <key>comment</key>
+        <string>Custom SNU CA 23-1 extension</string>
+        <key>match</key>
+        <string>\b(svunpack|svpack|svbrdcst|svaddi|svadd|svsub|svmul)\b</string>
+        <key>name</key>
+        <string>support.function.riscv.xsnuvector</string>
+      </dict>
+
+      <dict>
         <key>match</key>
         <string>\.(skip|ascii|asciiz|byte|[2|4|8]byte|data|double|float|half|kdata|ktext|space|text|word|dword|dtprelword|dtpreldword|set\s*(noat|at)|[s|u]leb128|string|incbin|zero|rodata|comm|common)\b</string>
         <key>name</key>
